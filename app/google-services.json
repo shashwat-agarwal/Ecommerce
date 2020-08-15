@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "124684720658",
+    "firebase_url": "https://myecommerce-cd309.firebaseio.com",
+    "project_id": "myecommerce-cd309",
+    "storage_bucket": "myecommerce-cd309.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124684720658:android:1b95db78db92d3a22716cb",
+        "android_client_info": {
+          "package_name": "agarwal.shashwat.ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124684720658-3irsr32cttqg1cpfod2024st27cbs0pj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN1VIQmmompVmd0eSPG_apwHwQHBP9MSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124684720658-3irsr32cttqg1cpfod2024st27cbs0pj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
