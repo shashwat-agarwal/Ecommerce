@@ -41,7 +41,7 @@
         android:layout_marginTop="8dp"
         android:background="@drawable/edit_text_border"
         android:digits="0123456789"
-        android:hint="Your Phone Number"
+        android:hint="@string/your_phone_number"
         android:inputType="phone"
         android:maxLength="13"
         android:padding="10dp"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginBottom="8dp"
-        android:text="We will send you OTP on this number"
+        android:text="@string/we_will_send_you_otp_on_this_number"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText" />
@@ -83,10 +83,10 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="5"
-            android:text="OTP on SMS"
+            android:text="@string/otp_on_sms"
             android:textAllCaps="false"
             android:textColor="#fff"
-            android:textSize="22sp" />
+            android:textSize="18sp" />
 
 
     </LinearLayout>
