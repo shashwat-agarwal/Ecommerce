@@ -42,6 +42,14 @@ public class verifyPhone extends AppCompatActivity {
         continueButton = findViewById(R.id.continueButton);
         pin = findViewById(R.id.firstPinView);
         progressBar=findViewById(R.id.progressBar);
+        findViewById(R.id.backbutton).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(verifyPhone.this, "Back button pressed", Toast.LENGTH_SHORT).show();
+                finish();
+            }
+        });
+
         startPhoneNumberVerification(phoneNumber);
         otpsent.setText("OTP has been sent to " + phoneNumber);
 

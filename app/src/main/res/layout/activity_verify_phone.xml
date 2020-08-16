@@ -2,16 +2,30 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backbutton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".verifyPhone">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:layout_marginStart="2dp"
+        android:src="@drawable/backbutton"
+        app:layout_constraintBottom_toTopOf="@+id/firstPinView"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="27dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="20dp"
         android:text="Enter 6 digit OTP"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textStyle="bold"
@@ -20,16 +34,16 @@
 
     <com.chaos.view.PinView
         android:id="@+id/firstPinView"
+        style="@style/PinWidget.PinView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="108dp"
-        android:cursorVisible="true"
 
-        android:padding="5dp"
-        app:cursorWidth="3dp"
-        style="@style/PinWidget.PinView"
+        android:cursorVisible="true"
         android:inputType="number"
         android:itemBackground="@color/lightWhite"
+        android:padding="5dp"
+        app:cursorWidth="3dp"
         app:itemCount="6"
         app:itemRadius="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,11 +69,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="26dp"
 
+        android:text="Continue"
+        android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/otpSentNo"
-        android:textAllCaps="false"
-        android:text="Continue" />
+        app:layout_constraintTop_toBottomOf="@+id/otpSentNo" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -67,8 +81,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="12dp"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@+id/firstPinView"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        android:visibility="gone"/>
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager2 viewPager2;
     private Handler slideHandler = new Handler();
     final List<SlideItem> slideItems = new ArrayList<>();
-  /*  @Override
+  @Override
     protected void onStart() {
         super.onStart();
         if (FirebaseAuth.getInstance().getCurrentUser()!=null){
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
         }
-    }*/
+    }
 
     @Override
     protected void onPause() {
