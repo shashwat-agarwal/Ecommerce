@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "124684720658",
-    "firebase_url": "https://myecommerce-cd309.firebaseio.com",
-    "project_id": "myecommerce-cd309",
-    "storage_bucket": "myecommerce-cd309.appspot.com"
+    "project_number": "464239784291",
+    "firebase_url": "https://ecommerce-8a958.firebaseio.com",
+    "project_id": "ecommerce-8a958",
+    "storage_bucket": "ecommerce-8a958.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:124684720658:android:1b95db78db92d3a22716cb",
+        "mobilesdk_app_id": "1:464239784291:android:c313295ebfa49955106356",
         "android_client_info": {
           "package_name": "agarwal.shashwat.ecommerce"
         }
       },
       "oauth_client": [
         {
-          "client_id": "124684720658-3irsr32cttqg1cpfod2024st27cbs0pj.apps.googleusercontent.com",
+          "client_id": "464239784291-vvr3vhinkhf48clm31cmv1na90vnd5ov.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "agarwal.shashwat.ecommerce",
+            "certificate_hash": "f019ad6e98bfaa2cc6a03ae6f39863294180e095"
+          }
+        },
+        {
+          "client_id": "464239784291-0bnb0tvrupe5ll8o7l7o62us6hdp8nc8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBN1VIQmmompVmd0eSPG_apwHwQHBP9MSg"
+          "current_key": "AIzaSyBtd2x7hHfCLPp67JNTDs2BuHgkgaPked8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "124684720658-3irsr32cttqg1cpfod2024st27cbs0pj.apps.googleusercontent.com",
+              "client_id": "464239784291-0bnb0tvrupe5ll8o7l7o62us6hdp8nc8.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
