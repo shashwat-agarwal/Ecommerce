@@ -21,7 +21,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class ProductActivity extends AppCompatActivity {
+public class ProductActivity extends AppCompatActivity implements bottomSheetDialog.bottomSheetListener {
 
     private AppBarConfiguration mAppBarConfiguration;
 
@@ -45,7 +45,9 @@ public class ProductActivity extends AppCompatActivity {
         navigationView.getMenu().findItem(R.id.logout).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                ProductActivity.this.logout();
+                bottomSheetDialog bottomSheetDialog=new bottomSheetDialog();
+                bottomSheetDialog.show(getSupportFragmentManager(),"exampleBottomSheet");
+
                 return true;
             }
         });
@@ -60,13 +62,7 @@ public class ProductActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(navigationView, navController);
     }
 
-    private void logout() {
-        Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show();
-        FirebaseAuth.getInstance().signOut();
-        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        startActivity(intent);
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -82,4 +78,14 @@ public class ProductActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
+    @Override
+    public void onButtonClicked() {
+        //logout
+
+        Toast.makeText(this, "Logout Successful", Toast.LENGTH_SHORT).show();
+        FirebaseAuth.getInstance().signOut();
+        Intent intent=new Intent(getApplicationContext(),MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+    }
 }
