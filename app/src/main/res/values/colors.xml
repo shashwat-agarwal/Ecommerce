@@ -7,4 +7,6 @@
     <color name="lightWhite">#edf5f2</color>
     <color name="darkBlue">#0957d6</color>
     <color name="transparent">#ebf0f5</color>
+    <color name="lightBlue">#cee1f5</color>
+    <color name="lightGreen">#52e625</color>
 </resources>

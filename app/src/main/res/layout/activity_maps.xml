@@ -5,6 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayoutBottom">
+
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -12,7 +17,42 @@
         android:layout_height="match_parent"
         tools:context=".MapsActivity" />
 
+        <ImageView
+            android:id="@+id/pinLocation"
+            android:layout_width="28dp"
+            android:layout_height="31dp"
+            android:layout_centerInParent="true"
+            map:srcCompat="@drawable/pin" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/SkipButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="0dp"
+        android:background="@null"
+        android:text="Skip >"
+
+        android:textColor="@color/darkBlue" />
+
+
+    <ImageView
+        android:id="@+id/gps"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/relativeLayoutBottom"
+        android:layout_alignParentEnd="true"
+        android:scaleType="centerCrop"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_gps" />
+
     <RelativeLayout
+        android:id="@+id/relativeLayoutBottom"
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_alignParentBottom="true"
@@ -29,6 +69,8 @@
             android:layout_marginEnd="8dp"
             android:background="@drawable/mapedittext"
             android:hint="Enter Address, Area or Apartment"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
             android:padding="10dp"
             android:textColor="#000" />
 
@@ -37,13 +79,14 @@
             android:layout_width="20dp"
             android:layout_height="19dp"
             android:layout_alignEnd="@+id/searchLocation"
-            android:elevation="5dp"
             android:layout_marginTop="23dp"
             android:layout_marginEnd="13dp"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
             android:src="@drawable/search" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/confirmDeliveryLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/searchLocation"
@@ -52,10 +95,12 @@
             android:layout_marginTop="35dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="24dp"
-            android:background="@color/transparent"
+            android:background="@color/lightBlue"
             android:text="Confirm delivery location"
             android:textAllCaps="false" />
     </RelativeLayout>
+
+
 
 
 </RelativeLayout>

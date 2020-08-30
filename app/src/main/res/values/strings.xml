@@ -5,4 +5,17 @@
     <string name="your_phone_number">Your Phone Number</string>
     <string name="we_will_send_you_otp_on_this_number">We will send you OTP on this number</string>
     <string name="otp_on_sms">OTP on SMS</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
 </resources>
