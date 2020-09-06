@@ -23,6 +23,8 @@ import androidx.appcompat.widget.Toolbar;
 
 public class ProductActivity extends AppCompatActivity implements bottomSheetDialog.bottomSheetListener {
 
+
+
     private AppBarConfiguration mAppBarConfiguration;
 
     @Override
@@ -41,6 +43,8 @@ public class ProductActivity extends AppCompatActivity implements bottomSheetDia
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
+
+
 
         navigationView.getMenu().findItem(R.id.logout).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
