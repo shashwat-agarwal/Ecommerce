@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
-
+    tools:context=".HomeFragment">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -21,10 +20,17 @@
 
 
         <include
-        layout="@layout/horizontal_scroll_layout"
+        layout="@layout/horizontal_scroll_layout_vegetable"
         tools:layout_editor_absoluteX="-3dp"
         tools:layout_editor_absoluteY="172dp" />
 
+        <include
+            layout="@layout/horizontal_scroll_layout_dailyneeds"/>
+
+        <include
+            layout="@layout/horizontal_scroll_layout_milk"/>
+
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

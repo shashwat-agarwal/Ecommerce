@@ -8,6 +8,14 @@
     android:fitsSystemWindows="true"
     tools:context=".ProductActivity">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/content_product" />
+
+    </androidx.core.widget.NestedScrollView>
+
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,8 +52,6 @@
         </RelativeLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_product" />
 
 
 
